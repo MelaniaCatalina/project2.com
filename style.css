@@ -1,0 +1,153 @@
+
+@font-face {
+    font-family: font;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: font;
+    box-sizing: border-box;
+    
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgb(42, 55, 233),#b3abc7);
+    
+}
+.title{
+    text-align: center;
+    color:white;
+    font-weight: 100;
+}
+
+h2{
+    font-size: 50px;
+    text-shadow: 1px 1px 3px rgb(79, 75, 80);
+    margin-top: 50px;  
+}
+
+.container{
+    
+    width:50%;
+    background-color: rgba(255, 252, 252, 0.671);
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+
+input[type=text], [type=date] {
+    padding: 20px;
+    color:#1b198a ;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #9d989e;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.ButonTrimitere{
+    height: 45px;
+    width: 20%;
+    font-size: 18px;
+    background-color: #1b0ab9;
+    border-radius: 10px;
+    color:white;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.ButonTrimitere:hover{
+    color:#4d42e0e7;
+    background-color: #f4f1f7e7;
+}
+
+table, td, th {  
+    border: 1px solid #ffffff96;
+    text-align: left;
+    
+}
+  
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+  
+th {
+    padding: 15px;
+    color: #ffffff;
+    background-color: #f3c136;
+    font-weight: lighter;
+    text-align: center;
+   
+}
+
+td {
+    padding: 15px;
+    color: #1b0ab9;
+    
+    
+    
+}
+
+td:hover{
+    background-color: rgba(199, 190, 224, 0.671);
+}
+
+.delete{
+    float: right;
+    font-size: 15px;
+    background-color:#2d22c9;;
+    border-radius: 3px;
+    padding: 5px;
+    color:white;
+    border: none;
+    border: 1px sold black;
+}
+
+
+@media (max-width: 1300px) {
+    .container{
+        width: 90%;
+    }
+    .ButonTrimitere{
+        font-size: 15px;
+    }
+    .delete{
+        font-size: 12px;
+       
+    }
+}
+@media (max-width: 685px) {
+   
+    .container{
+        width: 100%;
+        border-radius: 0px;
+    }
+    .ButonTrimitere{
+        font-size: 12px;
+    }
+
+    .delete{
+        font-size: 10px;
+        padding: 2px; 
+    }
+    table, td, th {  
+        font-size: 12px;
+        
+    }
+}
